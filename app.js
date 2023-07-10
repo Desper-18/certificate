@@ -22,11 +22,11 @@ function certificateChange(event) {
   let certificate = event.target.value;
   student.certificateType = certificate;
   if (certificate === 'kids') {
-    campLabel.classList.toggle('none');
-    campLabel.classList.toggle('inline-block');
-  } else {
-    campLabel.classList.toggle('none');
-    campLabel.classList.toggle('inline-block');
+    campLabel.classList.remove('none');
+    campLabel.classList.add('inline-block');
+  } else if (certificate != 'kids') {
+    campLabel.classList.add('none');
+    campLabel.classList.remove('inline-block');
   }
 }
 
