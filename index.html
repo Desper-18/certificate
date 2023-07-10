@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <form class="form">
+      <div class="border">
+        <div id="certificateType">
+          <input
+            value="general"
+            type="radio"
+            id="general"
+            name="certificateType"
+            required
+          />General
+          <input
+            value="kids"
+            type="radio"
+            id="kids"
+            name="certificateType"
+            required
+          />Kids
+          <input
+            value="proskills"
+            type="radio"
+            id="proskills"
+            name="certificateType"
+            required
+          />ProSkills
+          <input
+            value="freelance"
+            type="radio"
+            id="freelance"
+            name="certificateType"
+            required
+          />Freelance
+        </div>
+        <div>
+          <div>Student name <input type="text" id="name" /></div>
+          <div>Student lastname <input type="text" id="lastname" /></div>
+          <div>
+            <select name="gender" id="gender">
+              <option value="gender">-- Пол --</option>
+              <option value="male">Мужской</option>
+              <option value="female">Женский</option>
+            </select>
+          </div>
+          <div>
+            <label for="camp" class="none" id="camp-label"
+              ><input type="checkbox" name="camp" id="camp" />лагерь</label
+            >
+            <select name="programm" id="programm">
+              <option value="programm">-- Программа --</option>
+              <option value="androidlvl1">
+                Андроид разработка - уровень 1
+              </option>
+              <option value="frontendlvl1">
+                Front-end разработка - уровень 1
+              </option>
+              <option value="uxui">UX/UI дизайн</option>
+              <option value="graphic">Графический дизайн</option>
+              <option value="digital">Digital маркетинг</option>
+              <option value="digital">Успешный стартап</option>
+              <option value="fromzero">Программирование с нуля</option>
+              <option value="androidkotlin">Android на Kotlin</option>
+              <option value="reactjs">React JS</option>
+              <option value="cs50">Основы программирования CS50</option>
+              <option value="storytelling">Storytelling with Scratch</option>
+              <option value="tilda">Сайт на Tilda</option>
+              <option value="eg">Цифровая грамотность</option>
+              <option value="pc">Основы компьютера</option>
+              <option value="freelance">Удаленный заработок</option>
+            </select>
+          </div>
+
+          <div>
+            <select name="instructor" id="instructor">
+              <option value="selectInstructor">-- Инструктор --</option>
+              <option value="anton">Антон Безухов</option>
+              <option value="alisher">Алишер Нарзуллоев</option>
+              <option value="akbar">Акбар Хамзаев</option>
+              <option value="bakhrom">Бахром Холматов</option>
+              <option value="bogdan">Богдан Ли</option>
+              <option value="vasiliy">Василий Вавилов</option>
+              <option value="jamshed">Джамшед Бобоев</option>
+              <option value="dilnoza">Дильноза Зоидова</option>
+              <option value="doni">Дониёр Сангинов</option>
+              <option value="islomiddin">Исломиддин Нуриддинов</option>
+              <option value="ismat">Исмат Мухамеджанов</option>
+              <option value="ozar">Озар Айни</option>
+              <option value="sherali">Саидмухаммад Хикматуллозода</option>
+              <option value="timima">Тимима Насратшоева</option>
+              <option value="umed">Умед Худойбердиев</option>
+              <option value="sherali">Шерали Джурабаев</option>
+              <option value="shahrier">Шахриер Гафуров</option>
+            </select>
+          </div>
+        </div>
+        <div class="date">ID № <input type="text" id="id" /></div>
+        <div class="date">Date <input type="text" id="date" /></div>
+        <div class="flex">
+          <a href="#" id="submit" target="_blank" onclick="NewTab()">Submit</a>
+        </div>
+      </div>
+    </form>
+
+    <script src="./app.js"></script>
+  </body>
+</html>

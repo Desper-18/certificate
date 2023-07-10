@@ -1,0 +1,98 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+  height: 220mm !important;
+  width: 364.5mm !important;
+  margin: 0;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+.certificate {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+}
+
+.img {
+  height: 100%;
+  width: 100%;
+}
+
+.relative {
+  position: relative;
+  top: -656px;
+  left: 218px;
+}
+
+.date {
+  position: absolute;
+  font-size: 1.75rem;
+  top: 858px;
+  left: 603px;
+  display: flex;
+  align-items: center;
+}
+#date {
+  display: flex;
+  align-items: center;
+}
+.student-id {
+  position: absolute;
+  font-size: 2rem;
+  top: 454px;
+  left: 135px;
+}
+
+.student-name {
+  font-size: 2.5rem;
+  color: black;
+  position: absolute;
+  font-weight: 600;
+  top: 497px;
+  left: 135px;
+}
+
+.finished-course {
+  color: black;
+  font-size: 2.2rem;
+  margin-top: 2.5rem;
+  font-weight: 400;
+}
+
+.programm {
+  width: 36rem;
+  color: black;
+  font-size: 2.2rem;
+  font-weight: bold;
+  position: relative;
+  top: -345px;
+  left: 260px;
+}
+
+.instructor {
+  position: absolute;
+  top: 840px;
+  left: 1059px;
+}
+
+.signature {
+  height: 10rem;
+}
+
+.instructor-signature {
+  color: black;
+  font-weight: 400;
+  font-size: 1.3rem;
+  width: 30rem;
+}
+
+@media print {
+  .programm {
+    top: -285px;
+  }
+}

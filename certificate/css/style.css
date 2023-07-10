@@ -1,0 +1,103 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+  height: 220mm !important;
+  width: 317mm !important;
+  margin: 0;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+.certificate {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+}
+
+.img {
+  height: 100%;
+  width: 100%;
+}
+
+.relative {
+  position: relative;
+  top: -656px;
+  left: 218px;
+}
+
+.date {
+  position: absolute;
+  font-size: 1.35rem;
+  top: 186px;
+  left: 575px;
+}
+.date-itp {
+  position: absolute;
+  font-size: 1.35rem;
+  top: 186px;
+  left: 575px;
+}
+
+.student-name {
+  width: 30rem;
+  font-size: 4rem;
+  color: #009fe3;
+  position: absolute;
+  top: 290px;
+  left: 575px;
+}
+.student-name-itp {
+  width: 30rem;
+  font-size: 4rem;
+  color: #009fe3;
+  position: absolute;
+  top: 372px;
+  left: 118px;
+}
+
+.finished-course {
+  color: black;
+  font-size: 1.35rem;
+}
+
+.programm {
+  width: 36rem;
+  color: black;
+  font-size: 2.2rem;
+  font-weight: bold;
+  position: relative;
+  top: -345px;
+  left: 260px;
+}
+
+.instructor {
+  position: absolute;
+  top: 729px;
+  left: 352px;
+}
+.instructor-itp {
+  position: absolute;
+  top: 729px;
+  left: 920px;
+}
+
+.signature {
+  height: 10rem;
+}
+
+.instructor-signature {
+  color: #454544;
+  font-weight: 700;
+  font-size: 1.3rem;
+  width: 30rem;
+}
+.instructor-signature-itp {
+  color: #454544;
+  font-weight: 500;
+  font-size: 1.1rem;
+  width: 30rem;
+}
