@@ -1,3 +1,10 @@
+const userInLS = localStorage.getItem("user")
+if (userInLS === null) {
+  location.replace("login.html")
+} else {
+}
+
+
 const certificateType = document.querySelector('#certificateType');
 const studentName = document.querySelector('#name');
 const studentLastname = document.querySelector('#lastname');
@@ -5,11 +12,13 @@ const gender = document.querySelector('#gender');
 const instructor = document.querySelector('#instructor');
 const date = document.querySelector('#date');
 const id = document.querySelector('#id');
+const logOutBtn = document.querySelector("#log-out")
 const btnSubmit = document.querySelector('#submit');
 const programm = document.querySelector('#programm');
 const campLabel = document.querySelector('#camp-label');
 const camp = document.querySelector('#camp');
 
+logOutBtn.addEventListener('click', logOut)
 certificateType.addEventListener('change', certificateChange);
 gender.addEventListener('change', genderChange);
 programm.addEventListener('change', Programm);
@@ -82,4 +91,9 @@ function Submit(event) {
   instructor.selectedIndex = 0;
   id.value = '';
   date.value = '';
+}
+
+function logOut (event) {
+  localStorage.removeItem("user")
+  window.location.reload()
 }
