@@ -61,7 +61,8 @@ select {
 
 .flex {
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
+  gap: 10px;
 }
 
 a {
@@ -90,6 +91,8 @@ a {
   justify-content: center;
   align-items: center;
   padding: 70px;
+  width: 80vw;
+  height: 70vh;
 }
 .login-container form{
   display: flex;
@@ -123,4 +126,12 @@ a {
 
 .wrong-login{
   border: red 1px solid;
+}
+
+#log-out{
+  color: red;
+}
+#log-out:hover{
+  color: white;
+  background-color: red;
 }
