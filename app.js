@@ -87,10 +87,10 @@ function Submit(event) {
   studentName.value = '';
   studentLastname.value = '';
   gender.selectedIndex = 0;
-  programm.selectedIndex = 0;
-  instructor.selectedIndex = 0;
+  // programm.selectedIndex = 0;
+  // instructor.selectedIndex = 0;
   id.value = '';
-  date.value = '';
+  // date.value = '';
 }
 
 function logOut (event) {
