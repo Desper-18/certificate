@@ -6,8 +6,8 @@ loginBtn.addEventListener('click', move)
 
 function move(event) {
     if (
-        md5(loginInput.value) === "21232f297a57a5a743894a0e4a801fc3" &&
-        md5(passwordInput.value) === "e00cf25ad42683b3df678c61f42c6bda"
+        md5((loginInput.value).toLowerCase()) === "21232f297a57a5a743894a0e4a801fc3" &&
+        md5((passwordInput.value).toLowerCase()) === "e00cf25ad42683b3df678c61f42c6bda"
     ) {
         localStorage.setItem("user", JSON.stringify({
             "login" : loginInput.value,
