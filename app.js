@@ -1,6 +1,6 @@
 const userInLS = localStorage.getItem("user")
 if (userInLS === null) {
-  location.replace("login.html")
+  location.replace("loginPage/login.html")
 } else {
 }
 

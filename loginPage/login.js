@@ -1,8 +1,8 @@
-const loginBtn = document.querySelector('#login-btn')
+const loginForm = document.querySelector('#loginForm');
 const loginInput = document.querySelector('#input-login')
 const passwordInput = document.querySelector('#input-password')
 
-loginBtn.addEventListener('click', move)
+loginForm.addEventListener('submit', move)
 
 function move(event) {
     if (
@@ -13,12 +13,22 @@ function move(event) {
             "login" : loginInput.value,
             "password" : md5(passwordInput.value)
         }))
-        window.open('index.html')
+        window.open('../index.html')
     } else {
         event.preventDefault()
-        loginBtn.innerHTML = "Wrong password or login"
-        loginInput.classList.add("wrong-login")
-        passwordInput.classList.add("wrong-login")
+        loginForm[loginForm.length - 1].value = "Incorrect"
+        passwordInput.classList.add("border-danger")
+        loginInput.classList.add("border-danger")
+        loginForm[loginForm.length - 1].classList.add("bg-danger")
+        loginForm[loginForm.length - 1].classList.add("shakex")
+    }
+}
+
+function showPassword() {
+    if (document.getElementById("showPasswordBtn").checked){
+        passwordInput.type = "text"
+    } else {
+        passwordInput.type = "password"
     }
 }
 

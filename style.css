@@ -77,57 +77,6 @@ a {
   display: inline-block;
 }
 
-/* Login Page */
-
-.flex-center{
-  display: flex;
-  justify-content: center;
-}
-
-.login-container{
-  background: #FAFAF5;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 70px;
-  width: 80vw;
-  height: 70vh;
-}
-.login-container form{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
-}
-.login-container input{
-  width: auto;
-}
-.login-container div{
-  display: flex;
-  flex-direction: column;
-}
-
-.login-btn{
-  background-color: #1a9eda;
-  border: 0;
-  padding: 16px;
-  border-radius: 10px;
-  font-size: large;
-  color: white;
-  cursor: pointer;
-}
-.login-btn:hover{
-  background-color: white;
-  color: #1a9eda;
-  border: #1a9eda 1px solid;
-}
-
-.wrong-login{
-  border: red 1px solid;
-}
-
 #log-out{
   color: red;
 }
