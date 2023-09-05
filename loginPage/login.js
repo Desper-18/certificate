@@ -14,6 +14,7 @@ function move(event) {
             "password" : md5(passwordInput.value)
         }))
         window.open('../index.html')
+        window.close()
     } else {
         event.preventDefault()
         loginForm[loginForm.length - 1].value = "Incorrect"
