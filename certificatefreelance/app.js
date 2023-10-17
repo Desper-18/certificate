@@ -26,7 +26,7 @@ if (student !== null) {
     programm.textContent = '';
   } else if (student.instructor === 'Зарифхон Олимов') {
     img.src = './img/newDf.png';
-    programm.textContent = student.programm;
+    // programm.textContent = student.programm;
   }
 }
 
