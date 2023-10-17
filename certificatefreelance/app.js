@@ -24,8 +24,8 @@ if (student !== null) {
   if (student.instructor === 'Джамшед Бобоев') {
     img.src = './img/jamshed.png';
     programm.textContent = '';
-  } else {
-    img.src = './img/df.png';
+  } else if (student.instructor === 'Зарифхон Олимов') {
+    img.src = './img/newDf.png';
     programm.textContent = student.programm;
   }
 }
