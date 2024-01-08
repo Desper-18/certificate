@@ -12,11 +12,12 @@ const gender = document.querySelector('#gender');
 const instructor = document.querySelector('#instructor');
 const date = document.querySelector('#date');
 const id = document.querySelector('#id');
-const logOutBtn = document.querySelector("#log-out")
-const btnSubmit = document.querySelector('#submit');
 const programm = document.querySelector('#programm');
 const campLabel = document.querySelector('#camp-label');
 const camp = document.querySelector('#camp');
+const btnSubmit = document.querySelector('#submit');
+
+const logOutBtn = document.querySelector("#log-out")
 
 logOutBtn.addEventListener('click', logOut)
 certificateType.addEventListener('change', certificateChange);
