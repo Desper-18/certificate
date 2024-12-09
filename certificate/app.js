@@ -3,6 +3,7 @@ const studentSurname = document.querySelector("#surname");
 const finishedCourse = document.querySelector("#finishedCourse");
 const programm = document.querySelector("#programm");
 const instructor = document.querySelector("#instructor");
+const certificate_id = document.querySelector("#certificate_id");
 const date = document.querySelector("#date");
 const img = document.querySelector("img");
 const instructorDiv = document.querySelector(".instructor");
@@ -10,7 +11,8 @@ const instructorDiv = document.querySelector(".instructor");
 let student = JSON.parse(localStorage.getItem("student"));
 
 if (student != null) {
-  date.textContent = student.certificateId + student.date;
+  certificate_id.textContent = student.certificateId;
+  date.textContent = student.date;
   if (student.date.length > 15) {
     date.classList = "date1";
   }
@@ -19,8 +21,8 @@ if (student != null) {
   } else {
     finishedCourse.textContent = "окончила курс";
   }
-  studentName.textContent = student.name;
-  studentSurname.textContent = student.lastname;
+  studentName.textContent = student.name + " " + student.lastname;
+  // studentSurname.textContent = student.lastname;
   instructor.textContent = student.instructor;
   programm.textContent = student.programm;
 }
