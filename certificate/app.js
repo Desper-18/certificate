@@ -21,8 +21,8 @@ if (student != null) {
   } else {
     finishedCourse.textContent = "окончила курс";
   }
-  studentName.textContent = student.name + " " + student.lastname;
-  // studentSurname.textContent = student.lastname;
+  studentName.textContent = student.name;
+  studentSurname.textContent = student.lastname;
   instructor.textContent = student.instructor;
   programm.textContent = student.programm;
 }
