@@ -16,7 +16,7 @@ if (student != null) {
   if (student.date.length > 15) {
     date.classList = "date1";
   }
-  if (student.gender === "Мужской") {
+  if (student.gender === "male") {
     finishedCourse.textContent = "Окончил курс:";
   } else {
     finishedCourse.textContent = "Окончила курс:";

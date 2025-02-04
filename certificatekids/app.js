@@ -14,13 +14,13 @@ if (student != null) {
   }
 
   if (student.camp) {
-    if (student.gender === 'Мужской') {
+    if (student.gender === 'male') {
       finishedCourse.textContent = 'окончил лагерь';
     } else {
       finishedCourse.textContent = 'окончила лагерь';
     }
   } else {
-    if (student.gender === 'Мужской') {
+    if (student.gender === 'male') {
       finishedCourse.textContent = 'окончил курс';
     } else {
       finishedCourse.textContent = 'окончила курс';

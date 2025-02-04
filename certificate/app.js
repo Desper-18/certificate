@@ -9,6 +9,7 @@ const img = document.querySelector("img");
 const instructorDiv = document.querySelector(".instructor");
 
 let student = JSON.parse(localStorage.getItem("student"));
+console.log(student);
 
 if (student != null) {
   certificate_id.textContent = student.certificateId;
@@ -16,7 +17,7 @@ if (student != null) {
   if (student.date.length > 15) {
     date.classList = "date1";
   }
-  if (student.gender === "Мужской") {
+  if (student.gender === "male") {
     finishedCourse.textContent = "окончил курс";
   } else {
     finishedCourse.textContent = "окончила курс";
@@ -30,7 +31,7 @@ if (student != null) {
 //   img.src = "./img/itp.png";
 //   programm.textContent = "";
 //   studentName.classList.add("student-name-itp");
-//   if (student.gender === "Мужской") {
+//   if (student.gender === "male") {
 //     finishedCourse.textContent = "Окончил курс:";
 //   } else {
 //     finishedCourse.textContent = "Окончила курс:";

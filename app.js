@@ -20,16 +20,33 @@ const btnSubmit = document.querySelector('#submit');
 const logOutBtn = document.querySelector("#log-out")
 
 logOutBtn.addEventListener('click', logOut)
-certificateType.addEventListener('change', certificateChange);
-gender.addEventListener('change', genderChange);
+certificateType.addEventListener('click', certificateChange);
+gender.addEventListener('click', genderSelect);
 programm.addEventListener('change', Programm);
 instructor.addEventListener('change', instructorChange);
 btnSubmit.addEventListener('click', Submit);
 
 const student = {};
 
+document.addEventListener("DOMContentLoaded", () => {
+  student.gender = "male"
+})
+
+function removeActiveClassName(items, activeClassName) {
+  Array.from(items).forEach(btn => {
+    if (btn.classList.contains(activeClassName)) {
+      btn.classList.remove(activeClassName)
+    }
+  });
+}
+
 function certificateChange(event) {
-  let certificate = event.target.value;
+  const btn = event.target
+  console.log(certificateType.children);
+  removeActiveClassName(certificateType.children, 'type-selected')
+  btn.classList.add('type-selected')
+  let certificate = btn.dataset.type;
+  console.log(certificate);
   student.certificateType = certificate;
   if (certificate === 'kids') {
     campLabel.classList.remove('none');
@@ -40,8 +57,12 @@ function certificateChange(event) {
   }
 }
 
-function genderChange() {
-  let gen = gender.options[gender.selectedIndex].text;
+function genderSelect(evt) {
+  let btn = evt.target
+  let gen = btn.dataset.type;
+  removeActiveClassName(gender.children, 'gender-selected')
+  btn.classList.add('gender-selected')
+
   student.gender = gen;
 }
 
@@ -81,7 +102,7 @@ function Submit(event) {
   event.preventDefault();
   student.name = studentName.value;
   student.lastname = studentLastname.value;
-  student.certificateId = '№ ' + id.value;
+  student.certificateId = '№ ' + id.value.toUpperCase();
   student.date = ' от ' + date.value;
   student.camp = camp.checked;
   localStorage.setItem('student', JSON.stringify(student));
@@ -94,7 +115,7 @@ function Submit(event) {
   // date.value = '';
 }
 
-function logOut (event) {
+function logOut(event) {
   localStorage.removeItem("user")
   window.location.reload()
 }

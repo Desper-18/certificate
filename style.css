@@ -1,9 +1,26 @@
+:root {
+  --ilmhona-blue: 26 158 218;
+  --blue: 41 134 204;
+  --pink: 201 0 118;
+  --ilmhona-orange: 255 133 20;
+}
+
+* {
+  box-sizing: border-box;
+}
+
 body {
+  margin: 0;
   width: 100vw;
-  height: 100vh;
-  overflow: hidden;
+  min-height: 100vh;
+  overflow-x: hidden;
   font-family: 'Montserrat', sans-serif;
-  background-color: black;
+  background-image: radial-gradient(
+    80% 130% at -8% -5%,
+    rgb(26, 158, 218) 0%,
+    rgb(95, 176, 241) 62%,
+    rgb(16, 23, 32) 100%
+  );
 }
 
 .form {
@@ -12,12 +29,12 @@ body {
   align-items: center;
   align-content: center;
   justify-content: center;
-  height: 100vh;
+  min-height: 100vh;
   font-size: 1.5rem;
 }
 
 .border {
-  background-color: darkgray;
+  background-color: #dddddd;
   border-radius: 10px;
   padding: 2rem;
 }
@@ -29,11 +46,25 @@ a {
   border-radius: 100px;
 }
 
-input:not([type='radio']) {
-  width: 100%;
-  padding: 0.5rem 0.5rem;
-  border-radius: 12px;
-  width: 96%;
+input:not([type='radio'], [type='checkbox']),
+select {
+  display: block;
+  padding: 0.625rem;
+  border-radius: 0.5rem;
+  border-width: 1px;
+  border-color: #d1d5db;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  color: #111827;
+  background-color: #f9fafb;
+  margin: 0.5rem 0;
+}
+
+input:focus,
+button:focus,
+select:focus {
+  outline-color: rgb(var(--ilmhona-blue));
 }
 
 input[name='certificateType'] {
@@ -41,22 +72,23 @@ input[name='certificateType'] {
   margin: 0 0.5rem 1rem 1rem;
 }
 
-#name {
-  margin: 0 0 2rem 0;
+label {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
 }
 
 #lastname {
   margin: 0 0 2rem 0;
 }
 
-.date {
-  margin: 2rem 0 2rem 0;
+#id {
+  text-transform: uppercase;
 }
-select {
-  width: 100%;
-  padding: 0.3rem 0;
-  margin: 0.5rem 0;
-  border-radius: 10px;
+
+.date {
+  margin-bottom: 1rem;
 }
 
 .flex {
@@ -73,14 +105,89 @@ a {
   display: none;
 }
 
-.inline-block {
-  display: inline-block;
+#log-out {
+  color: rgb(var(--ilmhona-orange));
+}
+#log-out:hover {
+  color: white;
+  background-color: rgb(var(--ilmhona-orange));
+}
+#log-out:active {
+  background-color: rgb(var(--ilmhona-blue));
+}
+#submit {
+  color: rgb(var(--ilmhona-blue));
+}
+#submit:hover {
+  color: white;
+  background-color: rgb(var(--ilmhona-blue));
+}
+#submit:active {
+  background-color: rgb(var(--ilmhona-orange));
 }
 
-#log-out{
-  color: red;
+#certificateType,
+#gender {
+  background-color: #c6c6c6;
+  border-radius: 8px;
+  padding: 8px;
+  display: flex;
+  justify-content: space-between;
+  gap: 4px;
+  margin-bottom: 1rem;
 }
-#log-out:hover{
-  color: white;
-  background-color: red;
+
+.type-button,
+.gender-button {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 0;
+  background-color: transparent;
+  border-radius: 8px;
+  padding: 8px 8px;
+}
+
+.type-button[data-type='general'] {
+  --type-color: var(--ilmhona-blue);
+  --type-text-color: #fff;
+}
+.type-button[data-type='kids'] {
+  --type-color: 255 190 11;
+  --type-text-color: #000;
+}
+.type-button[data-type='proskills'] {
+  --type-color: 27 27 27;
+  --type-text-color: #fff;
+}
+.type-button[data-type='freelance'] {
+  --type-color: 246 203 165;
+  --type-text-color: #000;
+}
+.gender-button[data-type='male'] {
+  --type-color: var(--blue);
+  --type-text-color: #fff;
+}
+.gender-button[data-type='female'] {
+  --type-color: var(--pink);
+  --type-text-color: #fff;
+}
+
+.type-button:hover,
+.gender-button:hover {
+  background-color: rgba(var(--type-color) / 0.5);
+  color: var(--type-text-color);
+  cursor: pointer;
+}
+.gender-button.gender-selected,
+.type-button.type-selected {
+  background-color: rgb(var(--type-color));
+  color: var(--type-text-color);
+}
+
+.fields > div:not(#gender, .flex, .date) {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
 }
