@@ -25,7 +25,7 @@ if (student != null) {
   studentName.textContent = student.name;
   studentSurname.textContent = student.lastname;
   instructor.textContent = student.instructor;
-  programm.textContent = student.programm;
+  programm.insertAdjacentText("beforeend", student.programm);
 }
 // if (student.programm === "Программирование с нуля") {
 //   img.src = "./img/itp.png";

@@ -1,9 +1,15 @@
+:root {
+  --date-x-coordinate: 570px;
+  --student_name-x-coordinate: calc(var(--certificate_id-x-coordinate) - 2px);
+}
 body {
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   height: 220mm !important;
   width: 317mm !important;
   margin: 0;
+  color: #3c3c3b;
 }
+
 
 p {
   margin: 0;
@@ -32,8 +38,8 @@ p {
 .date {
   position: absolute;
   font-size: 1.3rem;
-  top: 80px;
-  left: 530px;
+  top: 190px;
+  left: var(--date-x-coordinate);
 }
 .date-itp {
   position: absolute;
@@ -44,30 +50,35 @@ p {
 
 #certificate_id {
   font-weight: 700;
-  color: #454544;
 }
 
 .student-name {
   width: 50rem;
   font-size: 3rem;
   font-weight: 500;
-  color: #009fe3;
+  color: #1a9eda;
   position: absolute;
-  top: 305px;
-  left: 530px;
+  top: 330px;
+  left: var(--date-x-coordinate);
   line-height: 2.7rem;
+}
+
+#name,
+#surname {
+  position: relative;
+  left: -3px;
 }
 .student-name-itp {
   width: 30rem;
   font-size: 4rem;
-  color: #009fe3;
+  color: #1a9eda;
   position: absolute;
   top: 372px;
   left: 118px;
 }
 
 .finished-course {
-  color: #484848;
+  color: #3c3c3b;
   font-size: 1.35rem;
 }
 
@@ -76,15 +87,21 @@ p {
   color: black;
   font-size: 2.2rem;
   font-weight: 600;
-  position: relative;
-  top: -370px;
-  left: 223px;
+  position: absolute;
+  bottom: 250px;
+  left: var(--date-x-coordinate);
+}
+
+#programm__placeholder {
+  font-weight: 500;
+  font-size: 1.6rem;
+  color: #3c3c3b;
 }
 
 .instructor {
   position: absolute;
-  top: 708px;
-  left: 345px;
+  top: 725.5px;
+  left: 346px;
 }
 .instructor-itp {
   position: absolute;
@@ -97,13 +114,13 @@ p {
 }
 
 .instructor-signature {
-  color: #454544;
+  color: #3c3c3b;
   font-weight: 700;
   font-size: 1.3rem;
   width: 30rem;
 }
 .instructor-signature-itp {
-  color: #454544;
+  color: #3c3c3b;
   font-weight: 500;
   font-size: 1.1rem;
   width: 30rem;
