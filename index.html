@@ -16,6 +16,31 @@
 <body>
   <form class="form">
     <div class="border">
+      <div id="language">
+        <button type="button" class="language-button language-selected" data-lang="ru">
+          <svg xmlns="http://www.w3.org/2000/svg" id="flag-icons-ru" height="1rem" style="pointer-events: none;"
+            viewBox="0 0 640 480">
+            <path fill="#fff" d="M0 0h640v160H0z" />
+            <path fill="#0039a6" d="M0 160h640v160H0z" />
+            <path fill="#d52b1e" d="M0 320h640v160H0z" />
+          </svg>
+          RU
+        </button>
+        <button type="button" class="language-button" data-lang="en">
+          <svg xmlns="http://www.w3.org/2000/svg" id="flag-icons-us" height="1rem" style="pointer-events: none;"
+            viewBox="0 0 640 480">
+            <path fill="#bd3d44" d="M0 0h640v480H0" />
+            <path stroke="#fff" stroke-width="37" d="M0 55.3h640M0 129h640M0 203h640M0 277h640M0 351h640M0 425h640" />
+            <path fill="#192f5d" d="M0 0h364.8v258.5H0" />
+            <marker id="us-a" markerHeight="30" markerWidth="30">
+              <path fill="#fff" d="m14 0 9 27L0 10h28L5 27z" />
+            </marker>
+            <path fill="none" marker-mid="url(#us-a)"
+              d="m0 0 16 11h61 61 61 61 60L47 37h61 61 60 61L16 63h61 61 61 61 60L47 89h61 61 60 61L16 115h61 61 61 61 60L47 141h61 61 60 61L16 166h61 61 61 61 60L47 192h61 61 60 61L16 218h61 61 61 61 60z" />
+          </svg>
+          EN
+        </button>
+      </div>
       <div id="certificateType">
         <button type="button" class="type-button type-selected" data-type="general">General</button>
         <button type="button" class="type-button" data-type="kids">Kids</button>
@@ -23,140 +48,26 @@
         <button type="button" class="type-button" data-type="freelance">Freelance</button>
       </div>
       <div class="fields">
-        <div>Student name <input type="text" id="name" /></div>
-        <div>Student lastname <input type="text" id="lastname" /></div>
+        <div><span id="name_label"></span> <input type="text" id="name" /></div>
+        <div><span id="surname_label"></span> <input type="text" id="lastname" /></div>
         <div id="gender">
           <button type="button" class="gender-button gender-selected" data-type="male">Мужской</button>
           <button type="button" class="gender-button" data-type="female">Женский</button>
-          <!-- <select name="gender" id="gender">
-            <option value="gender">-- Пол --</option>
-            <option value="male">Мужской</option>
-            <option value="female">Женский</option>
-          </select> -->
         </div>
         <div>
           <label for="camp" class="none" id="camp-label"><input style="width: auto" type="checkbox" name="camp"
               id="camp" />лагерь</label>
           <select name="programm" id="programm">
-            <option value="programm">-- Программа --</option>
-            <!-- Группа: Андроид разработка -->
-            <optgroup label="Андроид разработка">
-              <option value="introAndroid">Введение в Андроид разработку</option>
-              <option value="androidlvl1">Андроид разработка - уровень 1</option>
-              <option value="androidkotlin">Android на Kotlin</option>
-            </optgroup>
-            <!-- Группа: Искусственный интеллект -->
-            <optgroup label="Искусственный интеллект">
-              <option value="ai_0">Искусственный интеллект для новичков</option>
-              <option value="ai_lvl1">Искусственный интеллект lvl 1</option>
-            </optgroup>
-            <!-- Группа: IT Project Management -->
-            <optgroup label="IT Project Management">
-              <option value="it_project_0">IT Project Management 0</option>
-              <option value="it_project_1">IT Project Management LVL 1</option>
-              <option value="it_project_2">IT Project Management LVL 2</option>
-            </optgroup>
-            <!-- Группа: Веб-разработка -->
-            <optgroup label="Веб-разработка">
-              <option value="web0">Web 0</option>
-              <option value="jslvl1">JavaScript lvl 1</option>
-              <option value="jslvl2">JavaScript lvl 2</option>
-              <option value="reactjs">React JS</option>
-              <option value="frontendPro">Front-end Pro</option>
-            </optgroup>
-            <!-- Группа: Python -->
-            <optgroup label="Python">
-              <option value="pylvl0">Python lvl 0</option>
-              <option value="pylvl1">Python lvl 1</option>
-              <option value="pylvl2">Python lvl 2</option>
-            </optgroup>
-            <!-- Группа: Графический дизайн -->
-            <optgroup label="Графический дизайн">
-              <option value="graphicExpress">Графический дизайн: экспресс</option>
-              <option value="graphic">Графический дизайн</option>
-              <option value="graphicPro">Графический дизайн Pro</option>
-            </optgroup>
-            <!-- Группа: UX/UI дизайн -->
-            <optgroup label="UX/UI дизайн">
-              <option value="uxui">UX/UI дизайн</option>
-              <option value="uxui_0">UX/UI дизайн 0</option>
-              <option value="uxui_lvl1">UX/UI дизайн lvl 1</option>
-            </optgroup>
-            <!-- Группа: Основы программирования -->
-            <optgroup label="Основы программирования">
-              <option value="pc">Основы компьютера</option>
-              <option value="fromzero">Программирование с нуля</option>
-              <option value="cs50">Основы программирования CS50</option>
-            </optgroup>
-            <!-- Группа: Маркетинг -->
-            <optgroup label="Маркетинг">
-              <option value="digital">Digital маркетинг</option>
-              <option value="digital_new">Диджитал Маркетинг для начинающих</option>
-              <option value="product">Product Management</option>
-              <option value="project">Project Management</option>
-            </optgroup>
-            <!-- Группа: Другие курсы -->
-            <optgroup label="Другие курсы">
-              <option value="eg">Цифровая грамотность</option>
-              <option value="blender">Blender для начинающих</option>
-              <option value="data-analisys">Основы дата аналитики</option>
-              <option value="storytelling">Storytelling with Scratch</option>
-              <option value="tilda">Сайт на Tilda</option>
-              <option value="dataBasics">Как подружиться с данными</option>
-              <option value="successful">Успешный стартап</option>
-              <option value="freelance">Удаленный заработок</option>
-            </optgroup>
           </select>
         </div>
 
         <div>
           <select name="instructor" id="instructor">
-            <option value="selectInstructor">-- Инструктор --</option>
-            <optgroup label="Актуальные">
-              <option value="aziza">Азиза Сатыбалдыева</option>
-              <option value="akbar">Акбар Хамзаев</option>
-              <option value="alisher">Алишер Нарзуллоев</option>
-              <option value="zarif">Зарифхон Олимов</option>
-              <option value="manija">Манижа Рахматуллаева</option>
-              <option value="murod">Мурод Коимдодов</option>
-              <option value="solor">Солор Ибодуллоев</option>
-              <option value="somon">Сомон Бахромзода</option>
-              <option value="tabrez">Табрез Саноев</option>
-              <option value="yuliya">Юлия Мамедова</option>
-            </optgroup>
-            <optgroup label="Экс-инструкторы">
-              <option value="ali">Алиджон Аминов</option>
-              <option value="anton">Антон Безухов</option>
-              <option value="bakhrom">Бахром Холматов</option>
-              <option value="bogdan">Богдан Ли</option>
-              <option value="vasiliy">Василий Вавилов</option>
-              <option value="dilnoza">Дильноза Зоидова</option>
-              <option value="dilshod">Дильшод Кахори</option>
-              <option value="doni">Дониёр Сангинов</option>
-              <option value="jamshed">Джамшед Бобоев</option>
-              <option value="ismat">Исмат Мухамеджанов</option>
-              <option value="islomiddin">Исломиддин Нуриддинов</option>
-              <option value="manucher">Манучехр Гаффорзода</option>
-              <option value="manucher">Манучехр Гаффорзода</option>
-              <option value="murod">Мурод Коимдодов</option>
-              <option value="manucher">Манучехр Гаффорзода</option>
-              <option value="murod">Мурод Коимдодов</option>
-              <option value="nuriddin">Нуриддин Ишонкулов</option>
-              <option value="ozar">Озар Айни</option>
-              <option value="olim">Садыков Олимҷон</option>
-              <option value="safarzade">Фаррух Сафарзаде</option>
-              <option value="timima">Тимима Насратшоева</option>
-              <option value="umed">Умед Худойбердиев</option>
-              <option value="hasan">Хасан Солиев</option>
-              <option value="shahrier">Шахриер Гафуров</option>
-              <option value="sherali">Шерали Джурабаев</option>
-              <option value="shodibek">Шодибек Шарипов</option>
-            </optgroup>
           </select>
         </div>
         <div class="flex">
           <div class="date">ID № <input type="text" id="id" /></div>
-          <div class="date">Date <input type="text" id="date" /></div>
+          <div class="date"><span id="date_label"></span> <input type="text" id="date" /></div>
         </div>
         <div class="flex">
           <a href="#" id="log-out" onclick="">Log out</a>
@@ -166,6 +77,7 @@
     </div>
   </form>
 
+  <script src="./i18n.js"></script>
   <script src="./app.js"></script>
 </body>
 

@@ -1,7 +1,6 @@
 const userInLS = localStorage.getItem("user")
 if (userInLS === null) {
   location.replace("loginPage/login.html")
-} else {
 }
 
 
@@ -76,6 +75,8 @@ function instructorChange() {
 }
 
 function NewTab() {
+  const lang = localStorage.getItem('lang');
+
   if (
     student.certificateType === 'kids' &&
     student.programm === 'Storytelling with Scratch' &&
@@ -93,17 +94,21 @@ function NewTab() {
     if (student.programm === 'Программирование с нуля') {
       window.open('./certificate/itp.html', '_blank');
     }
-
-    window.open('./certificate/index.html', '_blank');
+    if (lang === "ru") {
+      window.open('./certificate/index.html', '_blank');
+    } else {
+      window.open('./certificate/index-en.html', '_blank');
+    }
   }
 }
 
 function Submit(event) {
   event.preventDefault();
+  const lang = localStorage.getItem('lang');
   student.name = studentName.value;
   student.lastname = studentLastname.value;
   student.certificateId = '№ ' + id.value.toUpperCase();
-  student.date = ' от ' + date.value;
+  student.date = lang === "ru" ? ' от ' + date.value : ' on ' + date.value;
   student.camp = camp.checked;
   localStorage.setItem('student', JSON.stringify(student));
   studentName.value = '';

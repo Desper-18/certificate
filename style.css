@@ -127,7 +127,8 @@ a {
 }
 
 #certificateType,
-#gender {
+#gender,
+#language {
   background-color: #c6c6c6;
   border-radius: 8px;
   padding: 8px;
@@ -138,7 +139,8 @@ a {
 }
 
 .type-button,
-.gender-button {
+.gender-button,
+.language-button {
   flex-grow: 1;
   display: flex;
   align-items: center;
@@ -147,6 +149,7 @@ a {
   background-color: transparent;
   border-radius: 8px;
   padding: 8px 8px;
+  gap: 4px;
 }
 
 .type-button[data-type='general'] {
@@ -173,15 +176,25 @@ a {
   --type-color: var(--pink);
   --type-text-color: #fff;
 }
+.language-button[data-lang='ru'] {
+  --type-color: 255 255 255;
+  --type-text-color: #000;
+}
+.language-button[data-lang='en'] {
+  --type-color: 255 255 255;
+  --type-text-color: #000;
+}
 
 .type-button:hover,
-.gender-button:hover {
+.gender-button:hover,
+.language-button:hover {
   background-color: rgba(var(--type-color) / 0.5);
   color: var(--type-text-color);
   cursor: pointer;
 }
+.type-button.type-selected,
 .gender-button.gender-selected,
-.type-button.type-selected {
+.language-button.language-selected {
   background-color: rgb(var(--type-color));
   color: var(--type-text-color);
 }
