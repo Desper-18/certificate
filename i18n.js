@@ -5,10 +5,12 @@ document.addEventListener("DOMContentLoaded", () => {
   if (currentLang === "ru") {
     document.querySelector(".language-selected").classList.remove("language-selected");
     document.querySelector('[data-lang="ru"]').classList.add("language-selected");
-  } else {
+  } else if (currentLang === "en") {
     document.querySelector(".language-selected").classList.remove("language-selected");
     document.querySelector('[data-lang="en"]').classList.add("language-selected");
     gender.style.display = "none";
+  } else {
+    localStorage.setItem("lang", "ru");
   }
 });
 language.addEventListener("click", (evt) => {
