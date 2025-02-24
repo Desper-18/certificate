@@ -33,6 +33,13 @@ const locales = {
   ru: {
     courseGroups: [
       {
+        name: "Андроид-разработка",
+        items: [
+          "Android 0",
+          "Android LVL 1",
+        ]
+      },
+      {
         name: "IT Project Management",
         items: [
           "IT Project Management 0",
@@ -53,7 +60,7 @@ const locales = {
       {
         name: "Python",
         items: [
-          "Python LVL 0",
+          "Python 0",
           "Python LVL 1",
           "Python LVL 2"
         ]
@@ -112,6 +119,7 @@ const locales = {
           "Азиза Сатыбалдыева",
           "Акбар Хамзаев",
           "Алишер Нарзуллоев",
+          "Джамшед Хусаинов",
           "Зарифхон Олимов",
           "Манижа Рахматуллаева",
           "Мурод Коимдодов",
@@ -153,6 +161,13 @@ const locales = {
   },
   en: {
     courseGroups: [
+      {
+        name: "Андроид Development",
+        items: [
+          "Android 0",
+          "Android LVL 1",
+        ]
+      },
       {
         name: "IT Project Management",
         items: [
@@ -233,6 +248,7 @@ const locales = {
           "Akbar Khamzaev",
           "Alisher Narzulloev",
           "Aziza Satybaldieva",
+          "Jamshed Husainov",
           "Manizha Rakhmatullaeva",
           "Murod Koimdodov",
           "Solor Ibodulloev",
