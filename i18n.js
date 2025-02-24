@@ -40,6 +40,13 @@ const locales = {
         ]
       },
       {
+        name: "Искусственный интеллект",
+        items: [
+          "Искусственный интеллект для новичков",
+          "Искусственный интеллект LVL 1",
+        ]
+      },
+      {
         name: "IT Project Management",
         items: [
           "IT Project Management 0",
@@ -166,6 +173,13 @@ const locales = {
         items: [
           "Android 0",
           "Android LVL 1",
+        ]
+      },
+      {
+        name: "Artificial Intelligence",
+        items: [
+          "Artificial Intelligence for Beginners",
+          "Artificial Intelligence LVL 1",
         ]
       },
       {
