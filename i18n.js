@@ -76,7 +76,8 @@ const locales = {
         name: "Графический дизайн",
         items: [
           "Графический дизайн: экспресс",
-          "Графический дизайн",
+          "Графический дизайн 0",
+          "Графический дизайн LVL 1",
           "Графический дизайн Pro"
         ]
       },
@@ -123,6 +124,7 @@ const locales = {
       {
         name: "Актуальные",
         items: [
+          "Азиз Умаров",
           "Азиза Сатыбалдыева",
           "Акбар Хамзаев",
           "Алишер Нарзуллоев",
@@ -212,7 +214,8 @@ const locales = {
         name: "Graphic Design",
         items: [
           "Graphic Design: Express",
-          "Graphic Design",
+          "Graphic Design 0",
+          "Graphic Design LVL 1",
           "Graphic Design Pro"
         ]
       },
@@ -261,6 +264,7 @@ const locales = {
         items: [
           "Akbar Khamzaev",
           "Alisher Narzulloev",
+          "Aziz Umarov",
           "Aziza Satybaldieva",
           "Jamshed Husainov",
           "Manizha Rakhmatullaeva",
