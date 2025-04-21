@@ -1,0 +1,12 @@
+{
+  "tabWidth": 2,
+  "useTabs": false,
+  "singleQuote": false,
+  "trailingComma": "es5",
+  "semi": true,
+  "bracketSpacing": true,
+  "arrowParens": "always",
+  "printWidth": 90,
+  "plugins": ["prettier-plugin-multiline-arrays"],
+  "multilineArraysWrapThreshold": 1
+}
