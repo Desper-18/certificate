@@ -37,22 +37,22 @@ const locales = {
         items: [
           "Android 0",
           "Android LVL 1",
-        ]
+        ],
       },
       {
         name: "Искусственный интеллект",
         items: [
           "Искусственный интеллект для новичков",
           "Искусственный интеллект LVL 1",
-        ]
+        ],
       },
       {
         name: "IT Project Management",
         items: [
           "IT Project Management 0",
           "IT Project Management LVL 1",
-          "IT Project Management LVL 2"
-        ]
+          "IT Project Management LVL 2",
+        ],
       },
       {
         name: "Веб-разработка",
@@ -61,16 +61,16 @@ const locales = {
           "JavaScript LVL 1",
           "JavaScript LVL 2",
           "React JS",
-          "Front-end Pro"
-        ]
+          "Front-end Pro",
+        ],
       },
       {
         name: "Python",
         items: [
           "Python 0",
           "Python LVL 1",
-          "Python LVL 2"
-        ]
+          "Python LVL 2",
+        ],
       },
       {
         name: "Графический дизайн",
@@ -78,24 +78,24 @@ const locales = {
           "Графический дизайн: экспресс",
           "Графический дизайн 0",
           "Графический дизайн LVL 1",
-          "Графический дизайн Pro"
-        ]
+          "Графический дизайн Pro",
+        ],
       },
       {
         name: "UX/UI дизайн",
         items: [
           "UX/UI дизайн",
           "UX/UI дизайн 0",
-          "UX/UI дизайн LVL 1"
-        ]
+          "UX/UI дизайн LVL 1",
+        ],
       },
       {
         name: "Основы программирования",
         items: [
           "Основы компьютера",
           "Программирование с нуля",
-          "Основы программирования CS50"
-        ]
+          "Основы программирования CS50",
+        ],
       },
       {
         name: "Маркетинг",
@@ -103,8 +103,8 @@ const locales = {
           "Digital маркетинг",
           "Диджитал Маркетинг для начинающих",
           "Product Management",
-          "Project Management"
-        ]
+          "Project Management",
+        ],
       },
       {
         name: "Другие курсы",
@@ -116,9 +116,9 @@ const locales = {
           "Сайт на Tilda",
           "Как подружиться с данными",
           "Успешный стартап",
-          "Удаленный заработок"
-        ]
-      }
+          "Удаленный заработок",
+        ],
+      },
     ],
     instructorGroups: [
       {
@@ -132,11 +132,12 @@ const locales = {
           "Зарифхон Олимов",
           "Манижа Рахматуллаева",
           "Мурод Коимдодов",
+          "Мухаммадрасул Холов",
           "Солор Ибодуллоев",
           "Сомон Бахромзода",
           "Табрез Саноев",
-          "Юлия Мамедова"
-        ]
+          "Юлия Мамедова",
+        ],
       },
       {
         name: "Экс-инструкторы",
@@ -163,10 +164,10 @@ const locales = {
           "Хасан Солиев",
           "Шахриер Гафуров",
           "Шерали Джурабаев",
-          "Шодибек Шарипов"
-        ]
-      }
-    ]
+          "Шодибек Шарипов",
+        ],
+      },
+    ],
   },
   en: {
     courseGroups: [
@@ -175,22 +176,22 @@ const locales = {
         items: [
           "Android 0",
           "Android LVL 1",
-        ]
+        ],
       },
       {
         name: "Artificial Intelligence",
         items: [
           "Artificial Intelligence for Beginners",
           "Artificial Intelligence LVL 1",
-        ]
+        ],
       },
       {
         name: "IT Project Management",
         items: [
           "IT Project Management 0",
           "IT Project Management LVL 1",
-          "IT Project Management LVL 2"
-        ]
+          "IT Project Management LVL 2",
+        ],
       },
       {
         name: "Web Development",
@@ -199,16 +200,16 @@ const locales = {
           "JavaScript LVL 1",
           "JavaScript LVL 2",
           "React JS",
-          "Front-end Pro"
-        ]
+          "Front-end Pro",
+        ],
       },
       {
         name: "Python",
         items: [
           "Python LVL 0",
           "Python LVL 1",
-          "Python LVL 2"
-        ]
+          "Python LVL 2",
+        ],
       },
       {
         name: "Graphic Design",
@@ -216,24 +217,24 @@ const locales = {
           "Graphic Design: Express",
           "Graphic Design 0",
           "Graphic Design LVL 1",
-          "Graphic Design Pro"
-        ]
+          "Graphic Design Pro",
+        ],
       },
       {
         name: "UX/UI Design",
         items: [
           "UX/UI Design",
           "UX/UI Design 0",
-          "UX/UI Design LVL 1"
-        ]
+          "UX/UI Design LVL 1",
+        ],
       },
       {
         name: "Programming Basics",
         items: [
           "Computer Basics",
           "Programming from Scratch",
-          "Programming Basics CS50"
-        ]
+          "Programming Basics CS50",
+        ],
       },
       {
         name: "Marketing",
@@ -241,8 +242,8 @@ const locales = {
           "Digital Marketing",
           "Digital Marketing for Beginners",
           "Product Management",
-          "Project Management"
-        ]
+          "Project Management",
+        ],
       },
       {
         name: "Other Courses",
@@ -254,9 +255,9 @@ const locales = {
           "Website on Tilda",
           "How to Befriend Data",
           "Successful Startup",
-          "Remote Earnings"
-        ]
-      }
+          "Remote Earnings",
+        ],
+      },
     ],
     instructorGroups: [
       {
@@ -268,13 +269,14 @@ const locales = {
           "Aziza Satybaldieva",
           "Jamshed Husainov",
           "Manizha Rakhmatullaeva",
+          "Muhammadrasul Kholov",
           "Murod Koimdodov",
           "Solor Ibodulloev",
           "Somon Bahromzoda",
           "Tabrez Sanoev",
           "Yulia Mamedova",
           "Zarifkhon Olimov",
-        ]
+        ],
       },
       {
         name: "Former Instructors",
@@ -302,13 +304,11 @@ const locales = {
           "Timima Nasratshoeva",
           "Umed Khudoyberdiev",
           "Vasily Vavilov",
-        ]
-      }
-    ]
-  }
+        ],
+      },
+    ],
+  },
 };
-
-
 
 const coursesSelect = document.querySelector("#programm");
 const instructorsSelect = document.querySelector("#instructor");
@@ -316,7 +316,13 @@ const nameLabel = document.querySelector("#name_label");
 const surnameLabel = document.querySelector("#surname_label");
 const dateLabel = document.querySelector("#date_label");
 
-function populateSelectOptions(lang, courseGroups, instructorGroups, coursesSelect, instructorsSelect) {
+function populateSelectOptions(
+  lang,
+  courseGroups,
+  instructorGroups,
+  coursesSelect,
+  instructorsSelect
+) {
   nameLabel.textContent = lang === "ru" ? "Имя студента" : "Student name";
   surnameLabel.textContent = lang === "ru" ? "Фамилия студента" : "Student surname";
   dateLabel.textContent = lang === "ru" ? "Дата выпуска" : "Date issue";
@@ -326,7 +332,8 @@ function populateSelectOptions(lang, courseGroups, instructorGroups, coursesSele
   coursesSelect.appendChild(defaultCourseOption);
 
   let defaultInstructorOption = document.createElement("option");
-  defaultInstructorOption.textContent = lang === "ru" ? "-- Инструктор --" : "-- Instructor --";
+  defaultInstructorOption.textContent =
+    lang === "ru" ? "-- Инструктор --" : "-- Instructor --";
   instructorsSelect.appendChild(defaultInstructorOption);
 
   renderOptGroups(courseGroups, coursesSelect);
@@ -348,5 +355,10 @@ function populateSelectOptions(lang, courseGroups, instructorGroups, coursesSele
 
 const lang = localStorage.getItem("lang") || "ru";
 const { courseGroups, instructorGroups } = locales[lang];
-populateSelectOptions(lang, courseGroups, instructorGroups, coursesSelect, instructorsSelect);
-
+populateSelectOptions(
+  lang,
+  courseGroups,
+  instructorGroups,
+  coursesSelect,
+  instructorsSelect
+);
